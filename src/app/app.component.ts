@@ -45,7 +45,7 @@ export class AppComponent {
   }
 
   public onPatchRequest(): void {
-    const body = new PostRequest("New Post for Id:3");
+    const body = { patchTitle: "New Patch for Id:3" };
     this.customHttpService
       .makePatchRequest<PostResponse>(`${this.baseUrl}/3`, body)
       .subscribe(
