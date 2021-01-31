@@ -1,3 +1,11 @@
 p {
   font-family: Lato;
 }
+
+div {
+  margin: 1em;
+}
+
+button {
+  margin: 0 0.2em;
+}

@@ -1,1 +1,14 @@
 <h1>{{ title }}</h1>
+
+<button (click)="onGetRequest()">GET Request</button>
+<button (click)="onPostRequest()">POST Request</button>
+<button (click)="onPutRequest()">PUT Request</button>
+<button (click)="onPatchRequest()">PATCH Request</button>
+<button (click)="onDeleteRequest()">DELETE Request</button>
+
+<div>
+	RESULT:
+	<p>
+		{{ result | json}}
+	</p>
+</div>
